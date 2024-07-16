@@ -21,7 +21,6 @@ public class DesafioFilter {
         Predicate<Carro> foiVendido = v -> v.vendido;
         Function<Carro, String> msg = m -> m.nome + " foi vendido, parabéns!";
 
-
         carros.stream()
                 .filter(valor)
                 .filter(foiVendido)
